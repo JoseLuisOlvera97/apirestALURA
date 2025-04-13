@@ -19,23 +19,6 @@ Este proyecto es parte del Challenge de Alura, donde se desarrolla una API RESTf
     Insomnia : Herramienta para probar y documentar APIs. 
 
 
-📂 Estructura del proyecto 
-
-apirestALURA/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── alura/
-│       │           └── foro/
-│       │               ├── controller/
-│       │               ├── model/
-│       │               └── repository/
-│       └── resources/
-│           └── application.properties
-├── pom.xml
-└── README.md
-
 
 🧰 Características
 
