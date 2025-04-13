@@ -16,7 +16,7 @@ Este proyecto es parte del Challenge de Alura, donde se desarrolla una API RESTf
 
     H2 Database : Base de datos en memoria para pruebas y desarrollo rápido.
 
-    Postman : Herramienta para probar y documentar APIs. 
+    Insomnia : Herramienta para probar y documentar APIs. 
 
 
 📂 Estructura del proyecto 
@@ -49,19 +49,58 @@ apirestALURA/
 
     Eliminar un tópico : Elimina un tópico del foro. 
 
-🧪 Pruebas con Postman
+🧪 Pruebas con Insomnia
 
-Para probar los endpoints de la API, puedes utilizar Postman :
+Para probar los endpoints de la API utilizando Insomnia :
 
-    Crear un tópico : Enviar una solicitud POST a /topicos con el cuerpo adecuado.
+    Crear una nueva colección en Insomnia para organizar las solicitudes relacionadas con la API.
 
-    Listar tópicos : Enviar una solicitud GET a /topicos.
+    Configurar las solicitudes :
 
-    Obtener un tópico : Enviar una solicitud GET a /topicos/{id}.
+        Crear un tópico :
 
-    Actualizar un tópico : Enviar una solicitud PUT a /topicos/{id} con los datos actualizados.
+            Método: POST
 
-    Eliminar un tópico : Enviar una solicitud DELETE a /topicos/{id}. 
+            URL: http://localhost:8080/topicos
+
+            Cuerpo (JSON):
+
+    {
+      "titulo": "Título del tópico",
+      "mensaje": "Contenido del mensaje",
+      "nombreCurso": "Nombre del curso"
+    }
+
+Listar todos los tópicos :
+
+    Método: GET
+
+    URL: http://localhost:8080/topicos
+
+Obtener un tópico específico :
+
+    Método: GET
+
+    URL: http://localhost:8080/topicos/{id}
+
+Actualizar un tópico :
+
+    Método: PUT
+
+    URL: http://localhost:8080/topicos/{id}
+
+    Cuerpo (JSON):
+
+    {
+      "titulo": "Nuevo título",
+      "mensaje": "Nuevo mensaje"
+    }
+
+Eliminar un tópico :
+
+    Método: DELETE
+
+    URL: http://localhost:8080/topicos/{id}
     
 Punto #1 Crear un nuevo topico
 ![1](https://github.com/user-attachments/assets/ec3984f6-c208-44e9-b681-c7b2eee3d08a)
